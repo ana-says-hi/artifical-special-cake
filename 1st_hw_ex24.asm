@@ -46,8 +46,6 @@ segment code use32 class=code
         add eax, 7 ;eax=eax+7=x+7=13+7=20
         adc edx, 0
         
-        ;;overflow
-        
         pop ebx     ; ebx=8
         idiv ebx     ; edx:eax=(7+x)/(b*b-c/d+2)=20/8=2  rest in edx
         
