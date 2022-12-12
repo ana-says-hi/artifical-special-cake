@@ -12,9 +12,9 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
 segment data use32 class=data
     ; ...
     S1 db '+', '2', '2', 'b', '8', '6', 'X', '8'
-    S2 db 'a', '4', '5'
-    
     ls1 equ $-S1    ;ls1=8
+    
+    S2 db 'a', '4', '5'
     ls2 equ $-S2    ;ls2=3
     
     D times ls1+ls2 db 0    ;11* 0
